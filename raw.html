@@ -1,63 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Masonry Layout</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-    }
-
-    .grid-container {
-      column-count: 3;
-      column-gap: 20px;
-    }
-
-    .box {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      margin-bottom: 20px;
-      display: inline-block;
-      width: 100%;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    @media (max-width: 768px) {
-      .grid-container {
-        column-count: 2;
+  <head>
+    <meta charset="UTF-8" />
+    <title>Masonry Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
       }
-    }
 
-    @media (max-width: 480px) {
-      .grid-container {
-        column-count: 1;
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
       }
-    }
-  </style>
-</head>
-<body>
 
-  <div class="grid-container">
-    <div class="box">Box 1: Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi fuga facilis rem amet cumque nisi placeat perspiciatis quae maxime dolore! .</div>
-    <div class="box">Box 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, debitis ipsum. Porro ab inventore iure asperiores soluta, voluptatibus, ratione tenetur, odit omnis quibusdam vel sed mollitia dignissimos! Sunt similique commodi facere ullam nostrum deserunt quasi omnis nulla aperiam at ratione enim totam voluptatibus aut optio molestiae quo dignissimos, excepturi eos eum repudiandae saepe error ipsa. Impedit sequi cum modi iusto..</div>
-    <div class="box">Box 3: Short content Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maiores totam tempore fuga cupiditate esse, minima, facilis sed possimus aspernatur officiis accusamus magnam voluptatum assumenda? Maxime dolorem modi aliquam ratione id enim suscipit sunt nostrum unde eius veritatis, quis doloribus, ex similique voluptatum eum accusantium dolor sed libero mollitia! Beatae porro quasi veniam corporis fuga, obcaecati sequi vitae asperiores illo amet. Unde porro beatae nobis quos quibusdam totam perspiciatis adipisci!.</div>
-    <div class="box">Box 4: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, laboriosam Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus nesciunt distinctio aspernatur fuga odit porro cupiditate magni molestiae corrupti harum doloremque, inventore accusantium perspiciatis eaque neque repudiandae mollitia provident a omnis voluptate expedita. Voluptate vitae quaerat ab ratione placeat tempore quas maxime unde omnis nihil nobis alias deleniti dolorem obcaecati dolor modi, architecto in, at rerum minus odio enim nesciunt! Alias libero placeat ea sunt distinctio, suscipit quod unde deleniti!!</div>
-    <div class="box">Box 5: Medium content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ex cum obcaecati sit recusandae neque, saepe odit iste tempora assumenda quam tempore eligendi repudiandae vitae quasi officiis a enim delectus. Voluptatum fuga facere nesciunt autem, inventore asperiores, soluta optio numquam ducimus molestias voluptates maxime, incidunt sapiente! Enim id exercitationem aliquid neque numquam! Voluptatum a ipsa error obcaecati. Voluptatum, eligendi dolore.
+      .grid-container {
+        column-count: 3;
+        column-gap: 20px;
+      }
+
+      .box {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 768px) {
+        .grid-container {
+          column-count: 2;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .grid-container {
+          column-count: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="box">
+        Box 1: Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Commodi fuga facilis rem amet cumque nisi
+        placeat perspiciatis quae maxime dolore! .
+      </div>
+      <div class="box">
+        Box 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, debitis
+        ipsum. Porro ab inventore iure asperiores soluta, voluptatibus, ratione
+        tenetur, odit omnis quibusdam vel sed mollitia dignissimos! Sunt
+        similique commodi facere ullam nostrum deserunt quasi omnis nulla
+        aperiam at ratione enim totam voluptatibus aut optio molestiae quo
+        dignissimos, excepturi eos eum repudiandae saepe error ipsa. Impedit
+        sequi cum modi iusto..
+      </div>
+      <div class="box">
+        Box 3: Short content Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Deleniti maiores totam tempore fuga cupiditate esse, minima,
+        facilis sed possimus aspernatur officiis accusamus magnam voluptatum
+        assumenda? Maxime dolorem modi aliquam ratione id enim suscipit sunt
+        nostrum unde eius veritatis, quis doloribus, ex similique voluptatum eum
+        accusantium dolor sed libero mollitia! Beatae porro quasi veniam
+        corporis fuga, obcaecati sequi vitae asperiores illo amet. Unde porro
+        beatae nobis quos quibusdam totam perspiciatis adipisci!.
+      </div>
+      <div class="box">
+        Box 4: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Obcaecati, laboriosam Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Natus nesciunt distinctio aspernatur fuga odit porro
+        cupiditate magni molestiae corrupti harum doloremque, inventore
+        accusantium perspiciatis eaque neque repudiandae mollitia provident a
+        omnis voluptate expedita. Voluptate vitae quaerat ab ratione placeat
+        tempore quas maxime unde omnis nihil nobis alias deleniti dolorem
+        obcaecati dolor modi, architecto in, at rerum minus odio enim nesciunt!
+        Alias libero placeat ea sunt distinctio, suscipit quod unde deleniti!!
+      </div>
+      <div class="box">
+        Box 5: Medium content. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Vel ex cum obcaecati sit recusandae neque, saepe odit
+        maxime, incidunt sapiente! Enim id exercitationem aliquid neque numquam!
+        Voluptatum a ipsa error obcaecati. Voluptatum, eligendi dolore.
+      </div>
+      <div class="box">
+        Box 6: Long content. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Duis id urna vitae justo gravida. Sed ut perspiciatis unde omnis
+        iste natus error sit voluptatem. Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit.
+      </div>
+      <div class="box">
+        Box 7: Tiny Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Eveniet vitae, laudantium perspiciatis possimus deserunt esse dolores
+        saepe sed tenetur ad!.
+      </div>
+      <div class="box">
+        Box 8: Some more example content to see how it flows in the layout.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui provident
+        neque quasi optio, vitae aperiam debitis, distinctio, iure odit minus
+        aspernatur explicabo nulla rerum labore commodi blanditiis corrupti
+        recusandae fuga hic sequi similique.
+      </div>
+      <div class="box">
+        Box 9: Final box. Thanks! Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Perferendis corrupti, qui commodi laborum sequi
+        dolorum nulla laboriosam cum totam fugit quam exercitationem adipisci
+        numquam architecto. Quisquam aperiam debitis, ab beatae officiis ipsum
+        fuga iste, nihil cumque et necessitatibus sint nobis! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Iure commodi non reprehenderit
+        nobis illo itaque distinctio unde eos nihil porro, eligendi
+        necessitatibus architecto consequuntur, temporibus omnis animi numquam
+        error! Blanditiis voluptas est quidem perspiciatis soluta veritatis rem
+        officia repellat ut.
+      </div>
     </div>
-    <div class="box">Box 6: Long content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id urna vitae justo gravida. Sed ut perspiciatis unde omnis iste natus error sit voluptatem. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
-    <div class="box">Box 7: Tiny Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet vitae, laudantium perspiciatis possimus deserunt esse dolores saepe sed tenetur ad!.</div>
-    <div class="box">Box 8: Some more example content to see how it flows in the layout. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui provident neque quasi optio, vitae aperiam debitis, distinctio, iure odit minus aspernatur explicabo nulla rerum labore commodi blanditiis corrupti recusandae fuga hic sequi similique. </div>
-    <div class="box">Box 9: Final box. Thanks! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis corrupti, qui commodi laborum sequi dolorum nulla laboriosam cum totam fugit quam exercitationem adipisci numquam architecto. Quisquam aperiam debitis, ab beatae officiis ipsum fuga iste, nihil cumque et necessitatibus sint nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi non reprehenderit nobis illo itaque distinctio unde eos nihil porro, eligendi necessitatibus architecto consequuntur, temporibus omnis animi numquam error! Blanditiis voluptas est quidem perspiciatis soluta veritatis rem officia repellat ut.</div>
-  </div>
-
-</body>
+  </body>
 </html>
